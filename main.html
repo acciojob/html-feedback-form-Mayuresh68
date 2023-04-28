@@ -10,13 +10,17 @@
 	<!-- the entire body must be written by student -->
 	<h1>Feedback Form</h1>
 	<form>
-		<label for="name"> Name</label>
-		<input type="text" id="name" required>
+		<label for="name">Name</label>
+		<input type="text" id="name" minlength="3"  maxlength="50" required>
 
-		<label for="portfolio">Portfolio </label>
+		<label for="portfolio">Portfolio</label>
 		<input type="text" id="portfolio" required>
 
-		<input type="range" min="1" max="100" value="50">
+		<label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+
+		<label for="likeness">Likeness</label>
+		<input type="range" min="1" max="100" value="50" id="likeness">
 
     <script type="text/javascript" src="./script.js">
 </script>
